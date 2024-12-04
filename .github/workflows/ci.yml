@@ -80,7 +80,7 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64 # ,linux/arm64
           build-args: |
             GORELEASER_VERSION=${{ steps.goreleaser.outputs.version }}
             GORELEASER_DISTRIBUTION=${{ steps.goreleaser.outputs.distribution }}
