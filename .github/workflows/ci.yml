@@ -1,7 +1,7 @@
 name: CI
 on:
   schedule:
-    - cron: '0 0 * * 5' # every friday at midnight
+    - cron: '0 1 * * 4' # at 01:00 on thursday
   workflow_dispatch:
     inputs:
       release-tag:
