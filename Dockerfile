@@ -1,7 +1,9 @@
+# Change to `goreleaser-pro` to use the pro version
+ARG GORELEASER_DISTRIBUTION=goreleaser
+# Change to a specific version to pin the version
 ARG GORELEASER_VERSION=nightly
-ARG GORELEASER_DISTRIBUTION
 
-FROM ghcr.io/goreleaser/goreleaser$GORELEASER_DISTRIBUTION:$GORELEASER_VERSION$GORELEASER_DISTRIBUTION AS goreleaser
+FROM ghcr.io/goreleaser/$GORELEASER_DISTRIBUTION:$GORELEASER_VERSION AS goreleaser
 
 FROM ghcr.io/sigstore/cosign/cosign:v2.4.1 AS cosign-bin
 
