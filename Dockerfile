@@ -42,7 +42,7 @@ RUN set -eux; \
     apt-get update; \
     apt-get install --no-install-recommends -y clang winehq-staging cmake ninja-build \
         docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin \
-        upx-ucl tini git mercurial ca-certificates gnupg2 openssh-client make; \
+        upx-ucl genisoimage tini git mercurial ca-certificates gnupg2 openssh-client make; \
     apt-get clean; \
     apt-get autoremove -y; \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*;
