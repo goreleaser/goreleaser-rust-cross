@@ -7,7 +7,7 @@ FROM ghcr.io/goreleaser/$GORELEASER_DISTRIBUTION:$GORELEASER_VERSION AS goreleas
 
 FROM ghcr.io/sigstore/cosign/cosign:v2.4.1 AS cosign-bin
 
-FROM rust:1.83.0-bookworm AS final
+FROM rust:1.84.0-bookworm AS final
 
 # Install cargo-binstall
 RUN curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash
