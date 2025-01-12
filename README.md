@@ -9,7 +9,7 @@ TODO:
 
 ## Installed tools
 
-- `rustup`/`cargo` (stable - 1.83.0) - you can install other toolchains as needed
+- `rustup`/`cargo` (stable - 1.84.0) - you can install other toolchains as needed
 - [`cargo-zigbuild`](https://github.com/rust-cross/cargo-zigbuild) (thanks to [**@messense**](https://github.com/messense))
 - [`zig`](https://ziglang.org)
 - [`cargo-xwin`](https://github.com/rust-cross/cargo-xwin) (thanks to [**@messense**](https://github.com/messense) and [**@Jake-Shadle**](https://github.com/Jake-Shadle))
