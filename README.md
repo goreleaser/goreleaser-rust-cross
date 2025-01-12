@@ -6,7 +6,6 @@ Docker image for cross-compiling Rust projects with GoReleaser.
 
 TODO:
 - [ ] Add chocolatey
-- [ ] Fix warning during `release` builds for `*-apple-darwin` targets
 
 ## Installed tools
 
