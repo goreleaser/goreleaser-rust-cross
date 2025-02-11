@@ -57,11 +57,7 @@ jobs:
             echo "distribution=goreleaser" >> $GITHUB_OUTPUT
           fi
           # Set goreleaser version
-          if [[ $is_pro == true && "${{ startsWith(inputs.release-tag, 'v') }}" == true ]]; then
-            echo "version=${{ inputs.release-tag }}-pro" >> $GITHUB_OUTPUT
-          else
-            echo "version=${{ inputs.release-tag || 'nightly' }}" >> $GITHUB_OUTPUT
-          fi
+          echo "version=${{ inputs.release-tag || 'nightly' }}" >> $GITHUB_OUTPUT
       - id: meta
         uses: docker/metadata-action@v5.6.1
         with:
