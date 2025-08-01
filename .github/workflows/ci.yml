@@ -59,7 +59,7 @@ jobs:
           # Set goreleaser version
           echo "version=${{ inputs.release-tag || 'nightly' }}" >> $GITHUB_OUTPUT
       - id: meta
-        uses: docker/metadata-action@v5.7.0
+        uses: docker/metadata-action@v5.8.0
         with:
           images: |
             ghcr.io/${{ github.repository_owner }}/${{ matrix.image }}
