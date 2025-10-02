@@ -7,6 +7,6 @@ This is an example Rust project to demonstrate how to use `goreleaser-rust-cross
     --rm \
     -v $(pwd):/usr/src/myapp \
     -w /usr/src/myapp \
-    ghcr.io/vedantmgoyal9/goreleaser-rust-cross:<goreleaser-version> \
+    ghcr.io/goreleaser/goreleaser-rust-cross:<goreleaser-version> \
     release --snapshot --clean
 ```
