@@ -5,7 +5,7 @@ ARG GORELEASER_VERSION=nightly
 
 FROM ghcr.io/goreleaser/$GORELEASER_DISTRIBUTION:$GORELEASER_VERSION AS goreleaser
 
-FROM ghcr.io/sigstore/cosign/cosign:v3.1.4 AS cosign-bin
+FROM ghcr.io/sigstore/cosign/cosign:v3.1.5 AS cosign-bin
 
 FROM rust:1.100.0-bookworm AS final
 
